@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: #f7f6f3; */
+  background-color:black;
+
+  --blue: #017ffa;
+  --dark-blue:#0063F5;
+  --black: #1a1a1a;
+  --red: #f80549;
+  --yellow:#F4B01F;
+  --pink:#FB7199;
+}
+
+main {
+  position: relative;
+  width: 536px;
+  height: 701px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.top {
+  padding: 4rem 0 5rem;
+}
+.top h1 {
+  margin: auto;
+  font-size: 5.6rem;
+  line-height: 5.5rem;
+  font-weight: 900;
+  color: var(--black);
+  transform: translateX(1rem);
+}
+
+.off{
+  font-size: 4.8rem;
+}
+
+.dots{
+  letter-spacing: -0.3rem;
+}
+
+.number {
+  text-align: center;
+  display: block;
+  font-size: 17.8rem;
+  line-height: 13rem;
+  color: var(--blue);
+  margin-bottom: 0.08em;
+}
+
+.decorations {
+  position: absolute;
+  z-index: 10;
+}
+
+.red-rect {
+  top: 25%;
+  left: 2%;
+  width: 4.5rem;
+  height: 4.5rem;
+  filter: blur(.6px);
+  transform: rotate(-10deg);
+  border: 0.9rem solid var(--red);
+}
+
+.yellow-circle{
+  top: 50%;
+  right:10%;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  border: 1.2rem solid var(--yellow);
+  filter:blur(4px);
+}
+
+.blue-border-rect{
+  top:3%;
+  left:10%;
+  width:1.7rem;
+  height:1.7rem;
+  filter: blur(.7px);
+  border: .6rem solid var(--dark-blue);
+  transform: rotate(45deg);
+}
+
+.blue-rect{
+  top:38%;
+  right:17%;
+  width:.7rem;
+  height:.7rem;
+  filter: blur(.6px);
+  transform: rotate(45deg);
+  background-color: var(--dark-blue);
+}
+
+.pink-rect{
+  top:0%;
+  right:20%;
+  width:1.2rem;
+  height:1.2rem;
+  filter: blur(.8px);
+  background-color: var(--pink);
+}
+
+.pink-border-rect{
+  top:15%;
+  right:0;
+  width:2.3rem;
+  height:2.3rem;
+  filter: blur(.8px);
+  border: .7rem solid var(--pink);
+}
+
+.details {
+  font-weight: 700;
+}
+
+.bottom{
+  align-self: flex-end;
+  padding-right: .5rem;
+}
+
+.bottom span {
+  display: block;
+  line-height: 1.8em;
+}
+
+.details span:nth-child(1) {
+  font-size: 1.5rem;
+}
+.details span:nth-child(2) {
+  font-size: 1.22rem;
+}
+.details span:nth-child(3) {
+  font-size: 1.015rem;
+}
+.details span:nth-child(4) {
+  font-size: 0.72rem;
+}
+.details span:nth-child(5) {
+  font-size: 0.68rem;
+}
+
+#black-bar{
+  height:8px;
+  width: 340px;
+  display: inline-block;
+  background: black;
+}
